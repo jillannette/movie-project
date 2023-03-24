@@ -10,7 +10,8 @@ const keys = require('./config/keys');
 // DB Setup
 mongoose.connect(keys.MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true,       //the options [useUnifiedTopology] is not supported  ????? WTF?
+
 });
 
 app.use(cors());
