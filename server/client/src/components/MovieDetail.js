@@ -15,8 +15,8 @@ const MovieDetail = (props) => {
     dispatch(fetchMovie(id));
   }, [dispatch, id]);
 
-  const POSTER_PATH = "http://image.tmdb.org/t/p/w185";
-  const BACKDROP_PATH = "http://image.tmdb.org/t/p/w1280";
+  const POSTER_PATH = "https://image.tmdb.org/t/p/w185";
+  const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280";
 
   if (movie) {
     return (
